@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Patua+One">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monomaniac+One">
+  <style>
+   @font-face
+   {
+    font-family: 'Superstar M54';
+    src: url('C:/Users/akash/OneDrive/Desktop/task-repo/SuperStar M54.ttf') format('truetype');
+    }
+    body
+    {
+     background-color: black;
+    }
+    .container
+    {
+      position: relative;
+      width: 1440px;
+      margin: 0 auto;
+    }
+
+    .rectangle-A
+    {
+      position: absolute;
+      width: 1440px;
+      height: 377px;
+      left: 0px;
+      top: 116px;
+      background: #656CEC;
+      border-radius: 24px;
+      z-index: 1;
+    }
+    .rectangle-B
+    {
+      position: absolute;
+      width: 1440px;
+      height: 110px;
+      left: 0px;
+      top: 0px;
+      border-radius: 24px;
+      background: #656CEC;
+      z-index: 1;
+    }
+    .rectangle-C
+    {
+      position: absolute;
+      width: 1440px;
+      height: 1350px;
+      left: 0px;
+      top: 0px;
+      border-radius: 24px;
+      background: #FFFFFF;
+      z-index: 0;
+    }
+
+    .leaderboard
+    {
+      position: absolute;
+      width: 362px;
+      height: 30px;
+      left: 45%;
+      transform: translateX(-50%);
+      top: 25px;
+      font-family: 'Superstar M54','Patua One','Bahnschrift';
+      text-shadow: -6px -6px 0 #0A2463, 1px -1px 0 #FFFFFF, -1px 1px 0 #FFFFFF, 1px 1px 0 #FFFFFF;
+      font-weight: 400;
+      font-size: 84px;
+      line-height: 64px;
+      color: #FFFFFF;
+      text-align: center;
+      z-index: 3;
+    }
+    .circle-1
+    {
+      position: absolute;
+      width: 36px;
+      height: 36px;
+      left: 698px;
+      top: 125px;
+      border-radius: 50%;
+      background: #BABEFF;
+      z-index: 3;
+     }
+     .score-central
+     {
+      position: absolute;
+      width: 17px;
+      height: 26px;
+      left: 708px;
+      top: 127px;
+      font-family: 'Monomaniac One';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 26px;
+      line-height: 29px;
+      color: #FFFFFF;
+      z-index: 4;
+     }
+     .ellipseouter-1
+     {
+      position: absolute;
+      width: 230.97px;
+      height: 230.97px;
+      left: 50%;
+      top: 169.66px;
+      margin-left: -115.49px;
+      background: #FFFFFF;
+      border-radius: 50%;
+      z-index: 2;
+     }
+     .ellipseinner-1
+     {
+      position: absolute;
+      width: 214.86px;
+      height: 214.86px;
+      left: calc(50% - 107.43px);
+      top: 177.71px;
+      background: #BABEFF;
+      border-radius: 50%;
+      z-index: 3;
+     }
+     .rectangle-1
+     {
+      position: absolute;
+      width: 228.29px;
+      height: 62.97px;
+      left: 608.71px;
+      top: 412.03px;
+      background: #BABEFF;
+      border-radius: 21.48px;
+      z-index: 2
+     }
+     .name-1
+     {
+      position: absolute;
+      width: 106.09px;
+      height: 25.51px;
+      left: 639.6px;
+      top: 413.74px;
+      font-family: 'Monomaniac One';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 29px;
+      color: #FFFFFF;
+      z-index: 3
+     }
+     .dot-1
+     {
+     position: absolute;
+     width: 3.69px;
+     height: 3.69px;
+     left: 746px;
+     top: 436.74px;
+     background: #FFFFFF;
+     border-radius: 36px;
+     z-index: 3
+     }
+    .score-1
+    {
+     position: absolute;
+     width: 51.03px;
+     height: 22.83px;
+     left: 761.8px;
+     top: 417.74px;
+     font-family: 'Monomaniac One';
+     font-style: normal;
+     font-weight: 400;
+     font-size: 30px;
+     line-height: 29px;
+     color: #FFFFFF;
+     z-index:3
+    }
+
+
+    .circle-2
+    {
+      position: absolute;
+  width: 36px;
+  height: 36px;
+  left: 406px;
+  top: 174px;
+      border-radius: 50%;
+      background: #BABEFF;
+      z-index: 3
+     }
+     .score-left
+     {
+       position: absolute;
+   width: 17px;
+   height: 26px;
+   left: 416px;
+   top: 176px;
+   font-family: 'Monomaniac One';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 24px;
+   line-height: 29px;
+   color: #FFFFFF;
+   z-index: 4
+
+     }
+     .ellipseouter-2
+     {
+      position: absolute;
+      width: 172px;
+      height: 172px;
+      left: 338px;
+      top: 242px;
+      background: #FFFFFF;
+      border-radius: 50%;
+      z-index: 2;
+     }
+     .ellipseinner-2
+     {
+       position: absolute;
+   width: 160px;
+   height: 160px;
+   left: 344px;
+   top: 248px;
+      background: #BABEFF;
+      border-radius: 50%;
+      z-index: 3;
+     }
+     .rectangle-2
+     {
+       position: absolute;
+ width: 156px;
+ height: 54px;
+ left: 346px;
+ top: 421px;
+      background: #BABEFF;
+      border-radius: 21.48px;
+      z-index: 2
+     }
+     .name-2
+     {
+      position: absolute;
+width: 43px;
+height: 19px;
+left: 360px;      top: 424.74px;
+      font-family: 'Monomaniac One';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      color: #FFFFFF;
+      z-index: 3
+     }
+     .dot-2
+     {
+     position: absolute;
+     width: 2px;
+     height: 2px;
+     left: 430px;
+     top: 438.74px;
+     background: #FFFFFF;
+     border-radius: 50%;
+     z-index: 3
+     }
+    .score-2
+    {
+     position: absolute;
+     width: 51.03px;
+     height: 22.83px;
+left: 445px;     top: 424.74px;
+     font-family: 'Monomaniac One';
+     font-style: normal;
+     font-weight: 400;
+     font-size: 20px;
+     line-height: 24px;
+     color: #FFFFFF;
+     z-index:3
+    }
+
+
+
+
+    .circle-3
+    {
+      position: absolute;
+    width: 36px;
+    height: 36px;
+left: 983px;    top: 174px;
+      border-radius: 50%;
+      background: #BABEFF;
+      z-index: 3
+     }
+     .score-right
+     {
+       position: absolute;
+    width: 17px;
+    height: 26px;
+    left: 993px;
+    top: 176px;
+    font-family: 'Monomaniac One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    z-index: 4
+
+     }
+     .ellipseouter-3
+     {
+      position: absolute;
+      width: 172px;
+      height: 172px;
+      left: 914px;
+      top: 242px;
+      background: #FFFFFF;
+      border-radius: 50%;
+      z-index: 2;
+     }
+     .ellipseinner-3
+     {
+       position: absolute;
+    width: 160px;
+    height: 160px;
+left: 920px;    top: 248px;
+      background: #BABEFF;
+      border-radius: 50%;
+      z-index: 3;
+     }
+     .rectangle-3
+     {
+       position: absolute;
+    width: 156px;
+    height: 54px;
+    left: 920px;
+    top: 421px;
+      background: #BABEFF;
+      border-radius: 21.48px;
+      z-index: 2
+     }
+     .name-3
+     {
+      position: absolute;
+    width: 43px;
+    height: 19px;
+  left: 943px;     top: 424.74px;
+      font-family: 'Monomaniac One';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      color: #FFFFFF;
+      z-index: 3
+     }
+     .dot-3
+     {
+     position: absolute;
+     width: 2px;
+     height: 2px;
+     left: 1024px;
+     top: 438.74px;
+     background: #FFFFFF;
+     border-radius: 50%;
+     z-index: 3
+     }
+    .score-3
+    {
+     position: absolute;
+     width: 51.03px;
+     height: 22.83px;
+    left: 1030px;     top: 424.74px;
+     font-family: 'Monomaniac One';
+     font-style: normal;
+     font-weight: 400;
+     font-size: 20px;
+     line-height: 24px;
+     color: #FFFFFF;
+     z-index:3
+    }
+
+
+
+
+
+
+
+
+.rectangle-4
+{
+position: absolute;
+width: 1440px;
+height: 100px;
+left: 0px;
+top: 499px;
+background: #D2D4F2;
+border-radius: 24px;
+z-index:2
+}
+.four
+{
+position: absolute;
+width: 23px;
+height: 36px;
+left: 40px;
+top: 529px;
+font-family: 'Monomaniac One';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 39px;
+color: #1E1E1E;
+z-index:3
+}
+.ellipseinner-4 {
+  position: absolute;
+  width: 77px;
+  height: 77px;
+  left: 129.25px;
+  top: 511px;
+  border-radius: 50%;
+  background-color: #BABEFF;
+  z-index: 4;
+}
+.ellipseouter-4 {
+  position: absolute;
+  width: 84px;
+  height: 84px;
+  left: 125px;
+  top: 507px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  z-index: 3;
+}
+
+.name-4
+{
+position: absolute;
+width: 227px;
+height: 36px;
+left: 255px;
+top: 529px;
+font-family: 'Monomaniac One';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 39px;
+color: #1E1E1E;
+z-index:3
+}
+.score-4
+{
+position: absolute;
+width: 227px;
+height: 36px;
+left: 1119px;
+top: 533px;
+font-family: 'Monomaniac One';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 39px;
+color: #000000;
+z-index:3
+}
+.rectangle-5
+{
+position: absolute;
+width: 1440px;
+height: 100px;
+left: 0px;
+top: 605px;
+background: #D2D4F2;
+border-radius: 24px;
+z-index:2
+}
+.five
+{
+position: absolute;
+width: 23px;
+height: 36px;
+left: 40px;
+top: 635px;
+font-family: 'Monomaniac One';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 39px;
+color: #1E1E1E;
+z-index:3
+}
+.ellipseinner-5 {
+  position: absolute;
+  width: 77px;
+  height: 77px;
+  left: 129.25px;
+  top: 617px;
+  border-radius: 50%;
+  background-color: #BABEFF;
+  z-index: 4;
+}
+.ellipseouter-5 {
+  position: absolute;
+  width: 84px;
+  height: 84px;
+  left: 125px;
+  top: 613px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  z-index: 3;
+}
+
+.name-5
+{
+position: absolute;
+width: 227px;
+height: 36px;
+left: 255px;
+top: 635px;
+font-family: 'Monomaniac One';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 39px;
+color: #1E1E1E;
+z-index:3
+}
+.score-5
+{
+position: absolute;
+width: 227px;
+height: 36px;
+left: 1119px;
+top: 639px;
+font-family: 'Monomaniac One';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 39px;
+color: #000000;
+z-index:3
+}
+.rectangle-6
+{
+position: absolute;
+width: 1440px;
+height: 100px;
+left: 0px;
+top: 711px;
+background: #D2D4F2;
+border-radius: 24px;
+z-index:2
+}
+.six
+{
+position: absolute;
+width: 23px;
+height: 36px;
+left: 40px;
+top: 741px;
+font-family: 'Monomaniac One';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 39px;
+color: #1E1E1E;
+z-index:3
+}
+.ellipseinner-6 {
+  position: absolute;
+  width: 77px;
+  height: 77px;
+  left: 129.25px;
+  top: 723.75px;
+  border-radius: 50%;
+  background-color: #BABEFF;
+  z-index: 4;
+}
+.ellipseouter-6 {
+  position: absolute;
+  width: 84px;
+  height: 84px;
+  left: 125px;
+  top: 719px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  z-index: 3;
+}
+
+.name-6
+{
+position: absolute;
+width: 227px;
+height: 36px;
+left: 255px;
+top: 741px;
+font-family: 'Monomaniac One';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 39px;
+color: #1E1E1E;
+z-index:3
+}
+.score-6
+{
+position: absolute;
+width: 227px;
+height: 36px;
+left: 1119px;
+top: 745px;
+font-family: 'Monomaniac One';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 39px;
+color: #000000;
+z-index:3
+}
+.rectangle-7
+{
+position: absolute;
+width: 1440px;
+height: 100px;
+left: 0px;
+top: 817px;
+background: #D2D4F2;
+border-radius: 24px;
+z-index:2
+}
+.seven
+{
+position: absolute;
+width: 23px;
+height: 36px;
+left: 40px;
+top: 847px;
+font-family: 'Monomaniac One';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 39px;
+color: #1E1E1E;
+z-index:3
+}
+.ellipseinner-7 {
+  position: absolute;
+  width: 77px;
+  height: 77px;
+  left: 129.25px;
+  top: 829px;
+  border-radius: 50%;
+  background-color: #BABEFF;
+  z-index: 4;
+}
+.ellipseouter-7 {
+  position: absolute;
+  width: 84px;
+  height: 84px;
+  left: 125px;
+  top: 825px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  z-index: 3;
+}
+
+.name-7
+{
+position: absolute;width: 227px;height: 36px;left: 255px;top: 847px;font-family:
+'Monomaniac One';font-style: normal;font-weight: 400;font-size: 32px;line-height: 39px;
+color: #1E1E1E;z-index:3
+}
+.score-7
+{
+position: absolute;width: 227px;height: 36px;left: 1119px;
+top: 851px;font-family: 'Monomaniac One';font-style: normal;font-weight: 400;
+font-size: 32px;line-height: 39px;color: #000000;z-index:3
+}
+.rectangle-8
+{
+position: absolute;width: 1440px;height: 100px;left: 0px ;top: 923px;
+background: #D2D4F2;border-radius: 24px;z-index:2
+}
+.eight
+{
+position: absolute;
+width: 23px;
+height: 36px;
+left: 40px;
+top: 953px;
+font-family: 'Monomaniac One';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 39px;
+color: #1E1E1E;
+z-index:3
+}
+.ellipseinner-8 {
+  position: absolute;
+  width: 77px;
+  height: 77px;
+  left: 129.25px;
+  top: 935px;
+  border-radius: 50%;
+  background-color: #BABEFF;
+  z-index: 4;
+}
+.ellipseouter-8{
+  position: absolute;
+  width: 84px;
+  height: 84px;
+  left: 125px;
+  top: 931px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  z-index: 3;
+}
+
+.name-8
+{
+position: absolute;
+width: 227px;
+height: 36px;
+left: 255px;
+top: 953px;
+font-family: 'Monomaniac One';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 39px;
+color: #1E1E1E;
+z-index:3
+}
+.score-8
+{
+position: absolute;
+width: 227px;
+height: 36px;
+left: 1119px;
+top: 957px;
+font-family: 'Monomaniac One';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 39px;
+color: #000000;
+z-index:3
+}
+.rectangle-9
+{
+position: absolute;width: 1440px;height: 100px;left: 0px ;top: 1029px;
+background: #D2D4F2;border-radius: 24px;z-index:2
+}
+.nine
+{
+position: absolute;
+width: 23px;
+height: 36px;
+left: 40px;
+top: 1059px;
+font-family: 'Monomaniac One';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 39px;
+color: #1E1E1E;
+z-index:3
+}
+.ellipseinner-9 {
+  position: absolute;
+  width: 77px;
+  height: 77px;
+  left: 129.25px;
+  top: 1041px;
+  border-radius: 50%;
+  background-color: #BABEFF;
+  z-index: 4;
+}
+.ellipseouter-9{
+  position: absolute;
+  width: 84px;
+  height: 84px;
+  left: 125px;
+  top: 1037px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  z-index: 3;
+}
+
+.name-9
+{
+position: absolute;
+width: 227px;
+height: 36px;
+left: 255px;
+top: 1059px;
+font-family: 'Monomaniac One';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 39px;
+color: #1E1E1E;
+z-index:3
+}
+.score-9
+{
+position: absolute;
+width: 227px;
+height: 36px;
+left: 1119px;
+top: 1063px;
+font-family: 'Monomaniac One';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 39px;
+color: #000000;
+z-index:3
+}
+.rectangle-10
+{
+position: absolute;width: 1440px;height: 100px;left: 0px ;top: 1135px;
+background: #D2D4F2;border-radius: 24px;z-index:2
+}
+.ten
+{
+position: absolute;
+width: 23px;
+height: 36px;
+left: 40px;
+top: 1165px;
+font-family: 'Monomaniac One';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 39px;
+color: #1E1E1E;
+z-index:3
+}
+.ellipseinner-10 {
+  position: absolute;
+  width: 77px;
+  height: 77px;
+  left: 129.25px;
+  top: 1147px;
+  border-radius: 50%;
+  background-color: #BABEFF;
+  z-index: 4;
+}
+.ellipseouter-10{
+  position: absolute;
+  width: 84px;
+  height: 84px;
+  left: 125px;
+  top: 1143px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  z-index: 3;
+}
+
+.name-10
+{
+position: absolute;
+width: 227px;
+height: 36px;
+left: 255px;
+top: 1165px;
+font-family: 'Monomaniac One';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 39px;
+color: #1E1E1E;
+z-index:3
+}
+.score-10
+{
+position: absolute;
+width: 227px;
+height: 36px;
+left: 1119px;
+top: 1169px;
+font-family: 'Monomaniac One';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 39px;
+color: #000000;
+z-index:3
+}
+.rectangle-11
+{
+position: absolute;width: 1440px;height: 100px;left: 0px ;top: 1241px;
+background: #D2D4F2;border-radius: 24px;z-index:2
+}
+.eleven
+{
+position: absolute;
+width: 23px;
+height: 36px;
+left: 40px;
+top: 1271px;
+font-family: 'Monomaniac One';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 39px;
+color: #1E1E1E;
+z-index:3
+}
+.ellipseinner-11 {
+  position: absolute;
+  width: 77px;
+  height: 77px;
+  left: 129.25px;
+  top: 1253px;
+  border-radius: 50%;
+  background-color: #BABEFF;
+  z-index: 4;
+}
+.ellipseouter-11{
+  position: absolute;
+  width: 84px;
+  height: 84px;
+  left: 125px;
+  top: 1249px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  z-index: 3;
+}
+
+.name-11
+{
+position: absolute;
+width: 227px;
+height: 36px;
+left: 255px;
+top: 1271px;
+font-family: 'Monomaniac One';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 39px;
+color: #1E1E1E;
+z-index:3
+}
+.score-11
+{
+position: absolute;
+width: 227px;
+height: 36px;
+left: 1119px;
+top: 1275px;
+font-family: 'Monomaniac One';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 39px;
+color: #000000;
+z-index:3
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ellipseinner-1,
+.ellipseinner-2,
+.ellipseinner-3,
+.ellipseinner-4,
+.ellipseinner-5,
+.ellipseinner-6,
+.ellipseinner-7,
+.ellipseinner-8,
+.ellipseinner-9,
+.ellipseinner-10,
+.ellipseinner-11
+{
+  background-size    : cover ;
+  background-position: center;
+}
+
+
+  </style>
+</head>
+<body>
+    <div class="container">
+    <div class="rectangle-A"></div>
+    <div class="leaderboard">LEADERBOARD</div>
+    <div class="rectangle-B"></div>
+    <div class="rectangle-C"></div>
+    <div class="line-1"></div>
+
+    <div class="circle-1"></div>
+    <div class="score-central">1</div>
+    <div class="ellipseinner-1"></div>
+    <div class="ellipseouter-1"></div>
+    <div class="rectangle-1"></div>
+    <div class="name-1">Amanda</div>
+    <div class="dot-1"></div>
+    <div class="score-1">764</div>
+
+    <div class="circle-2"></div>
+    <div class="score-left">2</div>
+    <div class="ellipseinner-2"></div>
+    <div class="ellipseouter-2"></div>
+    <div class="rectangle-2"></div>
+    <div class="name-2">Jeremy</div>
+    <div class="dot-2"></div>
+    <div class="score-2">672</div>
+
+    <div class="circle-3"></div>
+    <div class="score-right">3</div>
+    <div class="ellipseinner-3"></div>
+    <div class="ellipseouter-3"></div>
+    <div class="rectangle-3"></div>
+    <div class="name-3"></div>
+    <div class="dot-3"></div>
+    <div class="score-3"></div>
+
+    <div class="rectangle-4"></div>
+    <div class="four">4</div>
+    <div class="ellipseinner-4"></div>
+    <div class="ellipseouter-4"></div>
+    <div class="name-4"></div>
+    <div class="score-4"></div>
+
+    <div class="rectangle-5"></div>
+    <div class="five">5</div>
+    <div class="ellipseinner-5"></div>
+    <div class="ellipseouter-5"></div>
+    <div class="name-5"></div>
+    <div class="score-5"></div>
+
+    <div class="rectangle-6"></div>
+    <div class="six">6</div>
+    <div class="ellipseinner-6"></div>
+    <div class="ellipseouter-6"></div>
+    <div class="name-6"></div>
+    <div class="score-6"></div>
+
+    <div class="rectangle-7"></div>
+    <div class="seven">7</div>
+    <div class="ellipseinner-7"></div>
+    <div class="ellipseouter-7"></div>
+    <div class="name-7"></div>
+    <div class="score-7"></div>
+
+    <div class="rectangle-8"></div>
+    <div class="eight">8</div>
+    <div class="ellipseinner-8"></div>
+    <div class="ellipseouter-8"></div>
+    <div class="name-8"></div>
+    <div class="score-8"></div>
+
+    <div class="rectangle-9"></div>
+    <div class="nine">9</div>
+    <div class="ellipseinner-9"></div>
+    <div class="ellipseouter-9"></div>
+    <div class="name-9"></div>
+    <div class="score-9"></div>
+
+    <div class="rectangle-10"></div>
+    <div class="ten">10</div>
+    <div class="ellipseinner-10"></div>
+    <div class="ellipseouter-10"></div>
+    <div class="name-10"></div>
+    <div class="score-10"></div>
+
+    <div class="rectangle-11"></div>
+    <div class="eleven">11</div>
+    <div class="ellipseinner-11"></div>
+    <div class="ellipseouter-11"></div>
+    <div class="name-11"></div>
+    <div class="score-11"></div>
+
+
+
+    </div>
+
+    <script>
+    function fetchData()
+    {
+      fetch('https://www.coursehubiitg.in/api/codingweek/contributions')
+        .then(response => response.json())
+        .then(data =>
+        {
+          let leaderboardData = data;
+          leaderboardData.sort((a, b) => b.points - a.points);
+          let container = document.querySelector('.container');
+          for (let i = 0; i < leaderboardData.length && i < 11; i++)
+          {
+           let nameElement = container.querySelector('.name-' + (i + 1));
+           let scoreElement = container.querySelector('.score-' + (i + 1));
+           let avatarElement = container.querySelector('.ellipseinner-' + (i + 1));
+           if (nameElement && scoreElement && avatarElement)
+           {
+            nameElement.textContent = leaderboardData[i].name;
+            scoreElement.textContent = leaderboardData[i].points;
+            avatarElement.style.backgroundImage = `url(${leaderboardData[i].avatar})`;
+           }
+          }
+        })
+        .catch(error => {
+          console.log('Error:', error);
+        });
+      }
+    fetchData();
+  </script>
+
+
+</body>
+</html>
